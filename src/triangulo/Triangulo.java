@@ -21,25 +21,25 @@ public class Triangulo {
 		co2= l3+l2;
 		co3= l1+l3;
 
-		if (co1<l3 && co2<l1 && co3<l2) {
+		if (co1>l3 && co2>l1 && co3>l2) {
+			
+			if  (l1 == l2 && l1 == l3 && l2==l3){
+				
+				System.out.println("e o triangulo é um triangulo equilátero");
+			
+			} else if (l1 != l2 && l1 != l3 && l2 != l3) {
 
+				System.out.println("e o triangulo é um triangulo escaleno");
+			
+			} else {
+				System.out.println("e o triangulo é um triangulo isósceles");
+			
+			}
+
+		} else {
+			
 			System.out.println("o valor não forma um triangulo");
 
-		} else if  (l1 == l2 && l1 == l3 && l2==l3){
-			
-			System.out.println("e o triangulo é um triangulo equilátero");
-			
-		} else if (l1 != l2 && l1 != l3 && l2 != l3) {
-
-			System.out.println("e o triangulo é um triangulo escaleno");
-			
-		} else if (l1 == l2 || l1 == l3 || l2==l3) {
-			
-			System.out.println("e o triangulo é um triangulo isósceles");
-			
 		}
-		
-
 	}
-
 }
